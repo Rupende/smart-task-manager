@@ -1,0 +1,22 @@
+:root {
+    --primary: #007bff;
+    --success: #28a745;
+    --warning: #ffc107;
+    --danger: #dc3545;
+}
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); min-height: 100vh; }
+
+.stats-grid .card { cursor: pointer; transition: transform 0.2s; }
+.stats-grid .card:hover { transform: translateY(-5px); }
+
+.table th { border-top: none; font-weight: 600; }
+.table-hover tbody tr:hover { background-color: rgba(0,123,255,.05); }
+
+.badge { font-size: 0.75em; }
+.form-select-sm { width: auto; }
+
+@media (max-width: 768px) {
+    .stats-grid { flex-direction: column; }
+    .row > div { margin-bottom: 1rem; }
+}
